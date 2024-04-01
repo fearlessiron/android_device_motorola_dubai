@@ -103,5 +103,9 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-dubai-game-perf.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-dubai.conf
 
+# MicroG
+PRODUCT_PACKAGES += \
+    GmsCore
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/motorola/dubai/dubai-vendor.mk)
